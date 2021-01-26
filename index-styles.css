@@ -1,3 +1,68 @@
-h1 {
-  margin-top: 60px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
 }
+
+h1 {
+  margin: 0px;
+  padding: 10px;
+  padding-left: 200px;
+  background-color: #dfebec;
+  color: black;
+}
+
+/* --------------- Formatting for top navigation bar ------------------- */
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ul {
+  position: fixed;
+  top: 100;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #5F9EA0;
+}
+
+li {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+li:first-child {
+  border-left: 1px solid #bbb;
+  margin-left: 200px;
+}
+li:last-child {
+  border-left: 1px solid #bbb;
+  margin-right: 200px;
+}
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #568e8f;
+}
+.active {
+  background-color: #568e8f;
+}
+
+/* --------------- Formatting for website body ------------------- */
+.body {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+p {
+  margin: 10px;
+  margin-bottom: 20px;
+}
+p:first-of-type, h2 {
+  margin-top: 80px;
+}
+
