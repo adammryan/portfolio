@@ -1,34 +1,87 @@
+<!-- This is my html page for the website -->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Adam's Website</title>
     <link rel="stylesheet" href="index-styles.css">
   </head>
   <body>
-    <h1>Adam's Website</h1>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="second-page.html">Info</a></li>
-      <li><a href="missing-page.html">Empty Link</a></li>
-      <li style='float:right'><a href="about.asp">About</a></li>
-    </ul>
-    <div class='body'>
-      <p>This is just a filler paragraph to make this website look more like a
-        real website. I could probably come up with some useful information to
-        put here but that would require effort. Instead I'm going to copy Aragorn's
-        speech from Lord of the Rings. Sons of Gondor! Of Rohan! My brothers. I
-        see in your eyes the same fear that would take the heart of me. A day
-        may come when the courage of Men fails, when we forsake our friends and
-        break all bonds of fellowship, but it is not this day. An hour of
-        wolves and shattered shields when the Age of Men comes crashing down,
-        but it is not this day! This day we fight! By all that you hold dear on
-        this good earth, I bid you stand, Men of the West!</p>
-      <p>This is where some more information will go. You can see that there
-        are other links to use using the navigation bar at the top!</p>
-      <p>To be honest I think that Rey should have died instead of Kylo Ren.
-        That would have made the story so much more compelling and unexpected.</p>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Adam's website</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="reviews.html">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </nav> <!-- End of nav bar -->
+    <div class="page">
+      <div class="top-text">
+        <p><strong>Welcome!</strong></p>
+        <p>Say hello to Adam! Adam is a freelance photographer (not really) who is working on his computer
+        science degree at Brigham Young University. One class of his is about learning to build websites so
+        he decided to take up photography instead. The world may never know if this is the right move for him.</p>
+        <p>Adam specializes in landscape photography for famous pop culture characters who want
+          sentimental pictures in their homes. His most recent success was working with Jim Hopper in
+          Hawkins Indiana, capturing many of the <em>Stranger Things</em> that were happening in town as stunning pictures.</p>
+          <p>Just to be clear, none of these pictures are actually taken or being promoted by Adam. This
+          is in fact an assignment for class.</p>
+      </div>
+      <div class="picture-container">
+        <div class="picture-box">
+          <img src="https://petapixel.com/assets/uploads/2014/03/photog1.jpg" height=200px width=100%>
+        </div>
+        <div class="picture-box">
+          <img src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/14192120_1174447422616431_5147220364343303086_n.jpg?_nc_cat=105&ccb=2&_nc_sid=cdbe9c&_nc_ohc=KXm1KpmIfxgAX9rPUiK&_nc_ht=scontent-lax3-1.xx&oh=d37033eeedf0dafb970f374325a9e789&oe=603BFBCA" height=200px width=100%>
+        </div>
+        <div class="picture-box">
+          <img src="https://scontent-lax3-2.xx.fbcdn.net/v/t31.0-8/13040901_1006211599434497_52608194945340240_o.jpg?_nc_cat=111&ccb=2&_nc_sid=cdbe9c&_nc_ohc=_XOIzZW1h2UAX-zMppG&_nc_ht=scontent-lax3-2.xx&oh=c5e06247c7642c52e3499cecf4d03bf1&oe=603A3869" height=200px width=100%>
+
+        </div>
+      </div>
+      <!-- How do I get this to stay at the bottom of the page? -->
+      <div class="bottom-text">
+        <p>This is the text for the bottom of the page.</p>
+
+      </div>
     </div>
+
+    <div class="footer">
+      <div class="footer-text">
+        (111) 111-1111
+      </div>
+      <div class="footer-text">
+        1234 Address St., Provo UT
+      </div>
+      <div class="footer-text">
+        <a href='about.html'>About
+      </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
   </body>
 </html>
 
