@@ -1,167 +1,113 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
-  font: Sans-serif;
+  font-family: sans-serif;
 }
-.nav-bar.container {
 
-}
-.nav-bar {
-  background-color: #5F9EA0;
-  border: 1px red;
+.navbar {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100% !important;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #400080;
+  z-index: 1;
+  justify-content: space-around;
+}
+.logo, .menu {
+  width: 48%;
+  color: white;
+  font-family: fantasy;
+}
+.logo {
+  font-size: 35px;
   align-items: center;
 }
-
-.custom-nav {
-  background-color: blue;
+.menu {
+  display: inline;
+  justify-content: center;
+  text-align: right;
+  align-items: center;
 }
-
-.features {
-  width: 100%;
-  color: white;
-  background-color:  #80b1b3;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  border-top: 1px solid white;
+#menu li{
+  display: inline;
 }
-.feature-item {
-  width: 100%;
-  font-size: 30px;
-  text-align: left;
-  border-bottom: 1px solid white;
+.menuitem {
+  width: 50px;
   padding: 10px;
 }
-
-.name {
-  color: white;
-  padding: 10px;
-  width: 100%;
-  font-size: 50px;
+#grad1 {
+  background-color: white; /* For browsers that do not support gradients */
+  background-image: linear-gradient(white, #d9b3ff);
+}
+#grad2 {
+  background-color: #d9b3ff; /* For browsers that do not support gradients */
+  background-image: linear-gradient(black, #400080);
 }
 .page {
-  padding: 20px;
-  font-size: 20px;
-  background-color: #f9f9f9;
-  height: 100%;
-  margin-top: 10px;
-}
-.top-text, .reviews-box {
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
-
-.review {
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: 30px;
-}
-.review-pic {
-  margin-right: 20px;
-}
-.review-text {
+  display: flex;
+  position: absolute;
+  flex-wrap: wrap;
+  top: 50px;
+  right: 0;
+  left: 0;
+  width: 100% !important;
 
 }
 
-.picture-container {
+.content-box {
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: center;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-
+  flex-flow: column;
+  width: 70%;
+  justify-content: flex-start;
 }
-.picture-box {
+.top-text {
+  flex:auto;
+  width: 100%;
+  height: 100px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 3em;
+  padding: 20px;
+}
+.main-button {
+  flex: auto;
+  background-color: #400080;
   color: white;
-  background-color: #131f20;
-  height: 200px;
+  margin-left: 35%;
   width: 30%;
-  margin-bottom: 15px;
-}
+  height: 50px;
+  justify-content: center;
+  text-align: center;
+  padding: 15px;
 
-.reviews-box {
+  margin-top: 20px;
+  margin-bottom: 25px;
 
-}
-
-.normal-text {
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-bottom: 15px;
-  font-size: .9em;
 }
 
 .bottom-text {
-  margin: 30px;
-  margin-top: 150px;
-}
-
-.about-box {
-  margin-left: 20px;
-  margin-right: 20px;
+  height: 100px;
+  text-align: center;
+  padding: 15px;
 }
 
 .footer {
-  display: flex;
-  width: 100%;
+  width: 100% !important;
   height: 100px;
-  background-color: #ececec;
-  justify-content: space-between;
-  margin-top: 10px;
-  align-items: center;
-}
-.footer-text {
-  margin-left: 150px;
-  margin-right: 150px;
-  width: 30%;
-  color: #808080;
-}
-.footer-text a, .footer-text p {
-  color: #808080;
-  align-self: center;
-}
+  background-color: white;
+  bottom: 0;
 
-/* Mobile Styles */
-@media only screen and (max-width: 400px) {
-  body {
-
-  }
 }
-
-/* Desktop Styles */
-@media only screen and (min-width: 401px) {
-
-  .name {
-    width: 50%;
-  }
-  .features {
-    width: 48%;
-    color: white;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    border: 1px solid white;
-    margin-right: 2%;
-  }
-  .feature-item {
-    width: 33%;
-    font-size: 30px;
-    text-align: center;
-    border-right: 1px solid white;
-    padding: 10px;
-  }
-  .page {
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    height: 100%;
-  }
-  .picture-box {
-    width: 30%;
-    margin: 10px;
-    justify-content: space-around;
-  }
+.git-link {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
 }
 
