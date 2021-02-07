@@ -16,14 +16,33 @@
   z-index: 1;
   justify-content: space-around;
 }
+a:link {
+  color: white;
+  text-decoration: none;
+}
+a:active {
+  color:white;
+}
+a:visited {
+  color: white;
+}
+a:hover {
+  color: #d9d9d9;
+}
+
 .logo, .menu {
   width: 48%;
   color: white;
   font-family: fantasy;
+  margin-top: 2px;
 }
 .logo {
   font-size: 35px;
   align-items: center;
+}
+.logo:link, .logo:link:active, .logo:link:hover {
+  color:white;
+  text-decoration: none;
 }
 .menu {
   display: inline;
@@ -38,13 +57,45 @@
   width: 50px;
   padding: 10px;
 }
-#grad1 {
-  background-color: white; /* For browsers that do not support gradients */
-  background-image: linear-gradient(white, #d9b3ff);
+
+.dropbtn {
+  width: 100px;
+  height: 20px;
+  font-size: 15px;
+  background-color: black;
+  color: white;
+  border: none;
 }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+  width: 100px;
+  height: 30px;
+  text-align: center;
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+.dropdown-content a {
+    color: white;
+    background-color: #0099cc;
+    padding: 3px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #007399;}
+.dropdown:hover .dropdown-content {display: block;}
+/* .dropdown:hover .dropbtn {background-color: grey;} */
+
 #grad2 {
-  background-color: #d9b3ff; /* For browsers that do not support gradients */
-  background-image: linear-gradient(black, #400080);
+  background-color: #0099cc; /* For browsers that do not support gradients */
+  background-image: linear-gradient(black, #0099cc);
+}
+#grad2reverse {
+  background-color: #0099cc; /* For browsers that do not support gradients */
+  background-image: linear-gradient(#0099cc, black);
 }
 .page {
   display: flex;
@@ -76,9 +127,12 @@
   font-size: 3em;
   padding: 20px;
 }
+.sub-text {
+  font-size: 2em;
+}
 .main-button {
   flex: auto;
-  background-color: #400080;
+  background-color: #007399;
   color: white;
   margin-left: 35%;
   width: 30%;
@@ -98,6 +152,110 @@
   padding: 15px;
 }
 
+/*Second Page classes*/
+.my-music-container {
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  width: 70%;
+  justify-content: space-evenly;
+  /* border: 1px solid blue; */
+}
+.album-container {
+  flex: auto;
+  flex-flow: column wrap;
+  width: 350px;
+  /* border: 1px solid red; */
+  margin-bottom: 10px;
+}
+.album-container:hover {
+  background-color: #f2f2f2;
+}
+.album-container:last-child:hover {
+  background-color: white;
+}
+.album-description {
+  font-size: 15px;
+}
+.album-name {
+  font-size: 1.5em;
+}
+.image-box {
+  margin: 5%;
+  height:80%;
+  width: 90%;
+}
+img {
+  height: 100%;
+  width: 100%;
+}
+
+#black-link {
+  color: black;
+}
+
+/* Explore page classes */
+.suggest-box {
+  width: 100%;
+  height: 100px;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 8px;
+}
+.suggest-box:hover {
+  background-color: #f2f2f2;
+}
+.image-box2 {
+  /* border: 1px solid green; */
+  width: 95px;
+  height: 95px;
+}
+.suggest-desc-box {
+  width: 85%;
+  /* border: 1px solid yellow; */
+  display: flex;
+  flex: auto;
+  justify-content: space-between;
+}
+.suggest-description {
+  margin-left: 20px;
+  /* border: 1px solid red; */
+  width: 50%;
+  text-align: left;
+}
+
+/* Login page classes */
+.login-box {
+  align-self: center;
+  width: 50%;
+  text-align: left;
+  background-color: #d9d9d9;
+  padding: 20px;
+
+}
+.text-box {
+  background-color: white;
+  width: 100%;
+  height: 30px;
+  /* margin-left: 2%;
+  margin-right: 2%; */
+}
+.login-button {
+  align-self: center;
+  text-align: center;
+  padding: 13px;
+  margin-top: 30px;
+  background-color: #007399;
+  color: white;
+  width: 50%;
+  height: 50px;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
 .footer {
   width: 100% !important;
   height: 100px;
@@ -110,4 +268,3 @@
   text-align: center;
   margin-top: 20px;
 }
-
